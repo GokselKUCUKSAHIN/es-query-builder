@@ -554,8 +554,8 @@ func (agg aggsType) Field(field string) aggsType {
 	return agg.putInTheField("field", field)
 }
 
-func (agg aggsType) Path(field string) aggsType {
-	return agg.putInTheField("path", field)
+func (agg aggsType) Path(path string) aggsType {
+	return agg.putInTheField("path", path)
 }
 
 func (agg aggsType) Size(size int) aggsType {
@@ -590,4 +590,8 @@ func (o Object) Aggs(name string, agg aggsType) Object {
 	aggs.(Object)[name] = agg
 	o["aggs"] = aggs
 	return o
+}
+
+func (agg aggsType) Test(test string) aggsType {
+	return agg.putInTheField("test", test)
 }
