@@ -7,13 +7,13 @@ for low overhead and minimal memory usage.
 With [Go's module support](https://go.dev/wiki/Modules#how-to-use-modules), `go [build|run|test]` automatically fetches the necessary dependencies when you add the import in your code:
 
 ```sh
-import "github.com/GokselKUCUKSAHIN/es-query-builder"
+import "github.com/Trendyol/es-query-builder"
 ```
 
 Alternatively, use `go get`:
 
 ```sh
-go get -u github.com/GokselKUCUKSAHIN/es-query-builder
+go get -u github.com/Trendyol/es-query-builder
 ```
 
 ### Example
